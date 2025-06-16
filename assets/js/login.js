@@ -1,4 +1,5 @@
 const baseURL  = "https://backend-serive-v1-1.onrender.com";
+
 document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -19,16 +20,9 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     })
     .then(response => {
         if (!response.ok) {
-            // nếu status không phải 2xx → đọc text để xem lỗi trả về gì
             return response.text().then(text => {
-            throw new Error(`Error ${response.status}: ${text}`);
+                throw new Error(`Error ${response.status}: ${text}`);
             });
-        }
-        return response.json();
-        })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error("Sai thông tin đăng nhập!");
         }
         return response.json();
     })
