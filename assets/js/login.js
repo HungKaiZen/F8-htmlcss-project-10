@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    fetch("${baseUrl}/auth/access", {
+    fetch(`${baseUrl}/auth/access`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -14,6 +14,11 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
             username: username,
             password: password
         })
+    })
+    .then(response => response.text())
+    .then(text => {
+    console.log(text);  // Xem nội dung server trả về thực sự là gì
+    return JSON.parse(text);  // Nếu chắc là JSON thì parse tiếp, hoặc check trước
     })
     .then(response => {
         if (!response.ok) {
