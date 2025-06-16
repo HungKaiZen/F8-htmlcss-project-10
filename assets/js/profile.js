@@ -1,3 +1,4 @@
+const baseURL  = "https://f8-htmlcss-project-10.onrender.com";
 document.addEventListener("DOMContentLoaded", function() {
     const token = localStorage.getItem("token");
     const userId = localStorage.getItem("userId");
@@ -8,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-    fetch(`http://localhost:8080/user/${userId}`, {
+    fetch(`${baseUrl}/user/${userId}`, {
         method: "GET",
         headers: {
             "Authorization": "Bearer " + token,

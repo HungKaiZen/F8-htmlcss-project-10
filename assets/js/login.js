@@ -1,10 +1,11 @@
+const baseURL  = "https://f8-htmlcss-project-10.onrender.com";
 document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    fetch("http://localhost:8080/auth/access", {
+    fetch("${baseUrl}/auth/access", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

@@ -1,3 +1,4 @@
+const baseURL  = "https://f8-htmlcss-project-10.onrender.com";
 document.getElementById("registerForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -25,7 +26,7 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
     };
 
     // Gửi request register
-    fetch("http://localhost:8080/auth/register", {
+    fetch(`${baseURL}/auth/register`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
