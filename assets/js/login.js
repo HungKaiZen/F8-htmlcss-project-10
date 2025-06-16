@@ -17,11 +17,15 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
             deviceToken: "string"
         })
     })
-    .then(response => response.text())
-    .then(text => {
-    console.log(text);  // Xem nội dung server trả về thực sự là gì
-    return JSON.parse(text);  // Nếu chắc là JSON thì parse tiếp, hoặc check trước
-    })
+    .then(response => {
+        if (!response.ok) {
+            // nếu status không phải 2xx → đọc text để xem lỗi trả về gì
+            return response.text().then(text => {
+            throw new Error(`Error ${response.status}: ${text}`);
+            });
+        }
+        return response.json();
+        })
     .then(response => {
         if (!response.ok) {
             throw new Error("Sai thông tin đăng nhập!");
@@ -34,6 +38,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
         localStorage.setItem("token", token);
         localStorage.setItem("userId", userId);
         window.location.href = "index-logined.html";
+        console.log('Đăng nhập thành công:', data);
     })
     .catch(error => {
         alert(error.message);
