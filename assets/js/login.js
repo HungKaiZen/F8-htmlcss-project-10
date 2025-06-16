@@ -12,7 +12,9 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
         },
         body: JSON.stringify({
             username: username,
-            password: password
+            password: password,
+            platform: "WEB",
+            deviceToken: "string"
         })
     })
     .then(response => response.text())
