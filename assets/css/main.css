@@ -1372,72 +1372,306 @@ a {
     display: grid !important;
   }
 }
-@keyframes offer-slider {
-  0% {
-    transform: translateX(0%);
-  }
+@keyframes scroll-infinity {
   1% {
-    transform: translateX(-1%);
+    translate: -1%;
   }
   2% {
-    transform: translateX(-2%);
+    translate: -2%;
   }
   3% {
-    transform: translateX(-3%);
+    translate: -3%;
   }
   4% {
-    transform: translateX(-4%);
+    translate: -4%;
   }
   5% {
-    transform: translateX(-5%);
+    translate: -5%;
   }
   6% {
-    transform: translateX(-6%);
+    translate: -6%;
   }
   7% {
-    transform: translateX(-7%);
+    translate: -7%;
   }
   8% {
-    transform: translateX(-8%);
+    translate: -8%;
   }
   9% {
-    transform: translateX(-9%);
+    translate: -9%;
   }
   10% {
-    transform: translateX(-10%);
+    translate: -10%;
   }
   11% {
-    transform: translateX(-11%);
+    translate: -11%;
   }
   12% {
-    transform: translateX(-12%);
-  }
-  10% {
-    transform: translateX(-10%);
+    translate: -12%;
   }
   13% {
-    transform: translateX(-13%);
+    translate: -13%;
   }
   14% {
-    transform: translateX(-14%);
+    translate: -14%;
   }
   15% {
-    transform: translateX(-15%);
+    translate: -15%;
   }
   16% {
-    transform: translateX(-16%);
+    translate: -16%;
   }
   17% {
-    transform: translateX(-17%);
+    translate: -17%;
   }
   18% {
-    transform: translateX(-18%);
+    translate: -18%;
   }
   19% {
-    transform: translateX(-19%);
+    translate: -19%;
   }
   20% {
-    transform: translateX(-20%);
+    translate: -20%;
+  }
+  21% {
+    translate: -21%;
+  }
+  22% {
+    translate: -22%;
+  }
+  23% {
+    translate: -23%;
+  }
+  24% {
+    translate: -24%;
+  }
+  25% {
+    translate: -25%;
+  }
+  26% {
+    translate: -26%;
+  }
+  27% {
+    translate: -27%;
+  }
+  28% {
+    translate: -28%;
+  }
+  29% {
+    translate: -29%;
+  }
+  30% {
+    translate: -30%;
+  }
+  31% {
+    translate: -31%;
+  }
+  32% {
+    translate: -32%;
+  }
+  33% {
+    translate: -33%;
+  }
+  34% {
+    translate: -34%;
+  }
+  35% {
+    translate: -35%;
+  }
+  36% {
+    translate: -36%;
+  }
+  37% {
+    translate: -37%;
+  }
+  38% {
+    translate: -38%;
+  }
+  39% {
+    translate: -39%;
+  }
+  40% {
+    translate: -40%;
+  }
+  41% {
+    translate: -41%;
+  }
+  42% {
+    translate: -42%;
+  }
+  43% {
+    translate: -43%;
+  }
+  44% {
+    translate: -44%;
+  }
+  45% {
+    translate: -45%;
+  }
+  46% {
+    translate: -46%;
+  }
+  47% {
+    translate: -47%;
+  }
+  48% {
+    translate: -48%;
+  }
+  49% {
+    translate: -49%;
+  }
+  50% {
+    translate: -50%;
+  }
+  51% {
+    translate: -51%;
+  }
+  52% {
+    translate: -52%;
+  }
+  53% {
+    translate: -53%;
+  }
+  54% {
+    translate: -54%;
+  }
+  55% {
+    translate: -55%;
+  }
+  56% {
+    translate: -56%;
+  }
+  57% {
+    translate: -57%;
+  }
+  58% {
+    translate: -58%;
+  }
+  59% {
+    translate: -59%;
+  }
+  60% {
+    translate: -60%;
+  }
+  61% {
+    translate: -61%;
+  }
+  62% {
+    translate: -62%;
+  }
+  63% {
+    translate: -63%;
+  }
+  64% {
+    translate: -64%;
+  }
+  65% {
+    translate: -65%;
+  }
+  66% {
+    translate: -66%;
+  }
+  67% {
+    translate: -67%;
+  }
+  68% {
+    translate: -68%;
+  }
+  69% {
+    translate: -69%;
+  }
+  70% {
+    translate: -70%;
+  }
+  71% {
+    translate: -71%;
+  }
+  72% {
+    translate: -72%;
+  }
+  73% {
+    translate: -73%;
+  }
+  74% {
+    translate: -74%;
+  }
+  75% {
+    translate: -75%;
+  }
+  76% {
+    translate: -76%;
+  }
+  77% {
+    translate: -77%;
+  }
+  78% {
+    translate: -78%;
+  }
+  79% {
+    translate: -79%;
+  }
+  80% {
+    translate: -80%;
+  }
+  81% {
+    translate: -81%;
+  }
+  82% {
+    translate: -82%;
+  }
+  83% {
+    translate: -83%;
+  }
+  84% {
+    translate: -84%;
+  }
+  85% {
+    translate: -85%;
+  }
+  86% {
+    translate: -86%;
+  }
+  87% {
+    translate: -87%;
+  }
+  88% {
+    translate: -88%;
+  }
+  89% {
+    translate: -89%;
+  }
+  90% {
+    translate: -90%;
+  }
+  91% {
+    translate: -91%;
+  }
+  92% {
+    translate: -92%;
+  }
+  93% {
+    translate: -93%;
+  }
+  94% {
+    translate: -94%;
+  }
+  95% {
+    translate: -95%;
+  }
+  96% {
+    translate: -96%;
+  }
+  97% {
+    translate: -97%;
+  }
+  98% {
+    translate: -98%;
+  }
+  99% {
+    translate: -99%;
+  }
+  100% {
+    translate: -100%;
   }
 }
 .btn {
@@ -1515,7 +1749,7 @@ a {
 }
 .form__label {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 4px;
   color: var(--primary-color);
   font-size: 1.6rem;
   font-weight: 600;
@@ -1525,10 +1759,9 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 62px;
+  height: 44px;
   padding: 18px;
   width: 100%;
-  height: 66px;
   border-radius: 6px;
   background: #fff;
 }
@@ -1668,6 +1901,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 12px;
 }
 .course-card__detail {
   position: absolute;
@@ -1984,7 +2218,15 @@ a {
   }
 }
 
+.login {
+  height: 100vh;
+}
+
+.auth {
+  height: 100%;
+}
 .auth__row {
+  height: 100%;
   flex-wrap: nowrap;
   overflow: hidden;
 }
@@ -1997,6 +2239,14 @@ a {
   height: 100%;
   padding: 0 30px;
   background: #04704e;
+}
+.auth__intro-inner {
+  margin-top: 220px;
+}
+@media (max-width: 575.8px) {
+  .auth__intro {
+    height: 100vh !important;
+  }
 }
 .auth__intro-logo {
   position: absolute;
@@ -2024,13 +2274,20 @@ a {
   color: #fff;
 }
 .auth__intro-next-btn {
+  visibility: hidden;
   margin-top: 140px;
+}
+@media (max-width: 767.8px) {
+  .auth__intro-next-btn {
+    visibility: visible;
+  }
 }
 .auth__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
   padding: 70px 30px;
   background: var(--bg-color-1);
 }
@@ -2086,7 +2343,7 @@ a {
 }
 .auth__submit-btn {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .auth__text {
   color: #4f5a5a;
@@ -2094,7 +2351,11 @@ a {
   line-height: 1.75;
 }
 .auth .form__group + .form__group {
-  margin-top: 26px;
+  margin-top: 18px;
+}
+
+.slider-smooth {
+  transition: linear 0.5s;
 }
 
 .product-tab {
@@ -2534,7 +2795,7 @@ a {
   flex-shrink: 0;
   padding-left: 28px;
   transition: translate 1s ease;
-  animation: offer-slider 1s infinite;
+  animation: scroll-infinity 8s infinite;
 }
 .offer__item::before {
   content: "";
@@ -3674,6 +3935,67 @@ a {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.5;
+}
+
+.courses-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 60px 0;
+}
+
+.courses-slider__content {
+  position: relative;
+  width: inherit;
+  overflow: hidden;
+}
+
+.courses-slider__main {
+  position: relative;
+  display: flex;
+  width: inherit;
+  transition: transform 0.35s linear;
+}
+
+.courses-slider__item {
+  width: inherit;
+  flex: 1 0 100%;
+}
+
+.courses-slider__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.nextBtn,
+.prevBtn {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+}
+.nextBtn img,
+.prevBtn img {
+  width: 12px;
+}
+
+.nextBtn {
+  right: 0;
+  translate: 50%;
+}
+
+.prevBtn {
+  left: 0;
+  translate: -50%;
 }
 
 /*# sourceMappingURL=main.css.map */

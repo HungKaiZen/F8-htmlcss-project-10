@@ -55,7 +55,7 @@
     <body>
         <main class="signup">
             <div class="auth">
-                <div class="row row-cols-2">
+                <div class="row row-cols-2 row-cols-lg-1">
                     <div class="col">
                         <div class="auth__intro">
                             <a href="/" class="logo auth__intro-logo">
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col ">
                         <div class="auth__content">
                             <div class="auth__content-block">
                                 <button class="auth__close-btn">
@@ -92,21 +92,115 @@
                                     />
                                 </button>
                                 <form
-                                    action="./index-logined.html"
+                                    id="registerForm"
                                     class="form"
                                 >
+
                                     <div class="form__group">
                                         <label for="" class="form__label"
-                                            >Email address or phone
-                                            number</label
+                                            >fullName</label
+                                        >
+                                        <div
+                                            class="form__group-horizontal form__group-horizontal-border"
+                                        >
+                                            <input
+                                                type="text"
+                                                placeholder="FullName"
+                                                id="fullName"
+                                                class="form__group-input"
+                                            />
+                                        </div>
+                                        <p class="form__error">
+                                            Invalid email, please re-enter
+                                        </p>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="" class="form__label">Gender</label
+                                        >
+                                        <div
+                                            class="form__group-horizontal form__group-horizontal-border"
+                                        >
+                                            <input
+                                                type="text"
+                                                placeholder="Gender"
+                                                id="gender"
+                                                class="form__group-input"
+                                            />
+                                        </div>
+                                        <p class="form__error">
+                                            Invalid email, please re-enter
+                                        </p>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="" class="form__label"
+                                            >Date Of Birth</label
+                                        >
+                                        <div
+                                            class="form__group-horizontal form__group-horizontal-border"
+                                        >
+                                            <input
+                                                type="date"
+                                                placeholder="Date Of Birth"
+                                                id="dateOfBirth"
+                                                class="form__group-input"
+                                            />
+                                        </div>
+                                        <p class="form__error">
+                                            Invalid email, please re-enter
+                                        </p>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="" class="form__label"
+                                            >Email address</label
                                         >
                                         <div
                                             class="form__group-horizontal form__group-horizontal-border"
                                         >
                                             <input
                                                 type="email"
-                                                placeholder="Email address or phone number"
+                                                placeholder="Email address"
                                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                                id="email"
+                                                class="form__group-input"
+                                            />
+                                        </div>
+                                        <p class="form__error">
+                                            Invalid email, please re-enter
+                                        </p>
+                                    </div>        
+
+
+
+                                    <div class="form__group">
+                                        <label for="" class="form__label"
+                                            >Phone
+                                            number</label
+                                        >
+                                        <div
+                                            class="form__group-horizontal form__group-horizontal-border"
+                                        >
+                                            <input
+                                                type="tel"
+                                                placeholder="Phone number"
+                                                id="phoneNumber"
+                                                class="form__group-input"
+                                            />
+                                        </div>
+                                        <p class="form__error">
+                                            Invalid email, please re-enter
+                                        </p>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="" class="form__label"
+                                            >Username</label
+                                        >
+                                        <div
+                                            class="form__group-horizontal form__group-horizontal-border"
+                                        >
+                                            <input
+                                                type="text"
+                                                placeholder="Username"
+                                                id="username"
                                                 class="form__group-input"
                                             />
                                         </div>
@@ -125,6 +219,7 @@
                                                 type="password"
                                                 placeholder="Password"
                                                 minlength="6"
+                                                id="password"
                                                 class="form__group-input"
                                             />
                                         </div>
@@ -142,6 +237,7 @@
                                         >
                                             <input
                                                 type="password"
+                                                id="confirmPassword"
                                                 placeholder="Confirm Password"
                                                 minlength="6"
                                                 class="form__group-input"
@@ -151,6 +247,48 @@
                                             Invalid password, please re-enter
                                         </p>
                                     </div>
+                                    <div class="form__group">
+                                        <label for="apartmentNumber" class="form__label">
+                                            Address:
+                                        </label>
+                                        <div  style="display: flex; gap: 8px; font-size: 1.4rem; width: 100%;">
+                                            <div>
+                                                <div class="form__group-horizontal-border" style="border-radius: 8px; padding: 8px 12px;">
+                                                    <input type="text" id="apartmentNumber"  placeholder="Apartment Number" />
+                                                </div>
+                                                <div class="form__group-horizontal-border" style="border-radius: 8px; padding: 8px 12px; margin-top: 8px;">
+                                                    <input type="text" id="building" placeholder="Building" />
+                                                </div>
+                                                <div class="form__group-horizontal-border" style="border-radius: 8px; padding: 8px 12px; margin-top: 8px;">
+                                                    <input type="text" id="street" placeholder="Street" />
+                                                </div>
+                                                
+                                                <div class="form__group-horizontal-border" style="border-radius: 8px; padding: 8px 12px; margin-top: 8px;">
+                                                    <input type="text" id="city" placeholder="City" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="form__group-horizontal-border" style="border-radius: 8px; padding: 8px 12px;">
+                                                    <input type="text" id="floor"  placeholder="Floor" />
+                                                </div>
+
+                                                <div class="form__group-horizontal-border" style="border-radius: 8px; padding: 8px 12px; margin-top: 8px;">
+                                                    <input type="text" id="streetNumber" placeholder="Đường số" />
+                                                </div>
+                                                <div class="form__group-horizontal-border" style="border-radius: 8px; padding: 8px 12px; margin-top: 8px;">
+                                                    <input type="text" id="district" placeholder="District" />
+                                                </div>
+                                                <div class="form__group-horizontal-border" style="border-radius: 8px; padding: 8px 12px; margin-top: 8px;">
+                                                    <input type="text" id="country" placeholder="Country" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                    
+                    
                                     <button class="btn auth__submit-btn">
                                         Sign Up
                                     </button>
@@ -182,5 +320,7 @@
                 </div>
             </div>
         </main>
+
+        <script src="./assets/js/register.js"></script>
     </body>
 </html>
